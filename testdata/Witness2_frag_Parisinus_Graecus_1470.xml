@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE TEI PUBLIC "TEI" "https://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_all.dtd">
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Acta Barnabae</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IRSB - Projet FNS « Éditer la littérature apocryphe chrétienne » </publisher>
+				<pubPlace>Lausanne</pubPlace>
+				<date>2017…</date>
+			</publicationStmt>
+		<sourceDesc>
+			<msDesc xml:id="P">
+				<msIdentifier>
+					<country>France</country>
+					<settlement>Paris</settlement>
+					<repository>Bibliothèque nationale de France</repository>
+					<collection>Grec</collection>
+					<idno>1470</idno>
+				</msIdentifier>
+			</msDesc>
+		</sourceDesc>
+		</fileDesc>
+		<revisionDesc status="approved">
+			<change />
+		</revisionDesc>
+	</teiHeader>
+<text>
+<body>
+	<div>
+        <p>
+            <!-- partial content for demo purposes -->
+            <milestone n="4" />
+            ὡς δε τὸ ὅρα<lb n="17" />μα
+            εἶδον. σύντρομος γενόμενος<lb n="18" />
+            ἀπῆλθον παρὰ τοὺς πόδας<lb n="19" />
+            βαρνάβας καὶ ἀπήγγειλα αὐ<lb n="20" />τῶ
+            ἃ εἶδον καὶ ἤκουσαν παρὰ<lb n="21" />
+            τοῦ ἀνδρὸς ἐκείνου μυστήρια·<lb n="22" />
+            παῦλος δὲ ὁ ἀπόστολος οὐκ ἦν<lb n="23" />
+            ἐγγιστα ἡνίκα ἀνεθέμην τὰ<lb n="24" />
+            μυστήρια· εἶπεν δέ	μοι βαρνάβας·<lb n="25" />
+            μηδενὶ ἐξείπης τὴν
+            δύνα<subst>
+                <del rend="overstrike">
+                    <choice>
+                        <unclear reason="other" unit="character" atLeast="2" atMost="3" />
+                        <supplied cert="high">μιν</supplied>
+                    </choice>
+                </del>
+                <add hand="corr1" place="inline">μυ</add>
+            </subst><lb n="26" />
+            ἣν εἶδες· καμοὶ γὰρ τη νυκτὶ ταύ<lb n="27" />τη
+            παρέστη ὁ <abbr type="ns">κς</abbr> λέγων ὅτι θάρ<lb n="28" />σει·
+            ὡς γὰρ ἔδωκας τὴν ψυχήν<lb n="29" />
+            <handShift hand="manus1"/>σου ὑπερ <handShift hand="corr1"/>τοῦ ὀνόματός μου εἰς τὸ<lb n="30" />
+            <handShift hand="manus1"/>ἀποθανεῖν καὶ ἀπαλλοτριωθῆ<lb n="31" />ναι
+            <handShift hand="corr1"/>τοῦ σου ἐθνους. <handShift hand="manus1"/>οὕτως καὶ τε<lb n="32" />λειωθήση·
+            πλὴν <handShift hand="corr1"/>καὶ τὸν ὄντα  με<lb n="33" />θ
+            <handShift hand="manus1"/>ὑμῶν ὑπηρέτην. <handShift hand="corr1"/>καὶ αὐτὸν<lb n="34" />
+            <handShift hand="manus1"/>συλλαβοῦ μεθ εαυτοῦ.
+            <handShift hand="corr1"/>ἔχει γάρ τι<lb n="35" />να
+            μυστήρια· <handShift hand="manus1"/>νῦν <handShift hand="corr1"/>τέκνον φύλα<cb n="2" /><lb n="1" /><handShift hand="manus1"/>ξον
+            σεαυτῶ τὰ ῥήματα ἃ εἶδες<lb n="2" />
+            καὶ ἤκουσας,  καιρὸς  γάρ σε ἀπο<lb n="3" />καλύψαι
+            μέλλει·
+            <milestone n="5" />
+            ταῦτα δέ μου<lb n="4" />
+            κατηχηθέντος παρ’ αὐτοῦ. ἐ<lb n="5" />μείναμεν
+            ἐν εἰκονίω <handShift hand="corr1"/>ἡμέρας ἱ<lb n="6" />κανὰς·
+            <handShift hand="manus1"/>ἦν γὰρ <handShift hand="corr1"/>ἐκεῖ ὅσιος ἀνὴρ<lb n="7" />
+            <handShift hand="manus1"/>καὶ εὐλαβὴς <handShift hand="corr1"/>ὅστις ἡμᾶς καὶ ὑπε<lb n="8" />δέξατο.
+            <handShift hand="manus1"/>οὗ καὶ <handShift hand="corr1"/>τὸν οἶκον ἡγία<lb n="9" />σε
+            <handShift hand="manus1"/>παῦλος· ἐκεῖθεν <handShift hand="corr1"/>τοίνυν.<lb n="10" />
+            <handShift hand="manus1"/>κατηντήσαμεν ἐν <handShift hand="corr1"/>σελευκεία·<lb n="11" />
+            καὶ <handShift hand="manus1"/>προσμείναντες ἡμέρας<lb n="12" />
+            <num value="3">τρεῖς</num>, ἐπλεύσαμεν <handShift hand="corr1"/>εἰς κύπρον<lb n="13" />
+            καὶ ἤμην ἐγὼ <handShift hand="manus1"/>διακονῶν <handShift hand="corr1"/>αὐτοῖς<lb n="14" />
+            ἄχρις οὗ παρήλθομεν τὴν κύ<lb n="15" />προν·
+            ἀναχθέντες δὲ ἀπὸ τῆς<lb n="16" />
+            κύπρου κατήχθημεν ἐν πέργη<lb n="17" />
+            τῆς παμφυλίας κακεῖσε λοιπὸν<lb n="18" />
+            παρεμεινα
+            ὡσεὶ μῆνας <num value="2">δύο</num><lb n="19" />
+            βουλόμενος ἐπὶ τα
+            δοτικὰ
+            με<lb n="20" />ρη
+            <subst>
+              <del rend="overstrike">
+                    <choice>
+                        <unclear reason="other" atLeast="8" atMost="10" />
+                        <supplied cert="high">ἀποπλεῦσαι</supplied>
+                    </choice>
+                </del>
+                <add hand="corr1" place="inline">ἀποπλεπαι</add>
+            </subst>·
+            καὶ οὐκ εἴασέν με<lb n="21" />
+            τὸ <abbr type="ns">πνα</abbr> τὸ ἅγιον· ἐπιστρέψας δὲ<lb n="22" />
+            πάλιν ἐζήτησα τοὺς ἀποστό<lb n="23" />λους·
+            και  μαθὼν ὅτι ἐν
+            αντιοχεί<lb n="24" />α
+            εἰσὶν. ἐπορεύθη<choice>
+                <unclear reason="damage" unit="character" quantity="1" />
+                <supplied cert="high">ν</supplied>
+            </choice>
+            πρὸς αὐτούς<lb n="25" />
+
+        </p>
+    </div>
+</body>
+</text>
+</TEI>

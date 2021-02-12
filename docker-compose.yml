@@ -1,0 +1,27 @@
+version: '3.2'
+
+services:
+  stemmarest:
+    image: irsb/stemmarest
+    volumes:
+      - type: bind
+        source: ./graph-database
+        target: /var/lib/stemmarest/data
+    ports:
+      - 8080:8080
+
+  stemmaweb:
+    image: irsb/stemmaweb
+    ports:
+      - 3000:3000
+    depends_on:
+      - stemmarest
+
+  integrator:
+    image: irsb/integrator
+    depends_on:
+      - stemmarest
+    volumes:
+      - type: bind
+        source: .
+        target: /home
