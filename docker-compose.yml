@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   stemmarest:
-    image: irsb/stemmarest
+    image: unilenlac/stemmarest
     volumes:
       - type: bind
         source: ./graph-database
@@ -11,14 +11,14 @@ services:
       - 8080:8080
 
   stemmaweb:
-    image: irsb/stemmaweb
+    image: unilenlac/stemmaweb
     ports:
       - 3000:3000
     depends_on:
       - stemmarest
 
-  integrator:
-    image: irsb/integrator
+  enlacpipeline:
+    image: unilenlac/pipeline
     depends_on:
       - stemmarest
     volumes:
