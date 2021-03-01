@@ -398,7 +398,7 @@ then
     curl --request POST --form "name=$SECTION_NAME" --form "file=@$i" --form "filetype=cxjson" $STEMMAREST_URL/tradition/$TRADITION_ID/section;
   done
 
-  printf "\nDone. Check out the results at localhost:3000 by connecting with $USER/UserPass.\n"
+  printf "\nDone. Check out the results at localhost:3000 (or your own Stemmaweb instance) by connecting with $USER/UserPass.\n"
 else
   printf "\nDone. Check out the results in folder $OUTPUT.\n"
 fi
