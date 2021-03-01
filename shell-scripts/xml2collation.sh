@@ -70,8 +70,12 @@ fi
 
 if [ -f $RELATION_FILE ] # relation file exists
 then
-    printf "\n$RELATION_FILE file found; number of lines read: `grep -c '' $RELATION_FILE`"
+    printf "\n$RELATION_FILE file found."
+else
+    printf "\nUsing default relations..."
+    cp /relations.txt .
 fi
+printf "\nNumber of lines read: `grep -c '' $RELATION_FILE`"
 
 if [ ! -f $INDEX_FILE ] # index file still does not exist
 then

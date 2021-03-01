@@ -17,11 +17,11 @@ RUN mkdir -p /collatex/collatex-tools/target/
 
 COPY collatex-tools-1.8-SNAPSHOT.jar /collatex/collatex-tools/target/
 
-COPY relations.txt /home/
-
 ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
 # just a trick to disable cache selectively, from next command
 # https://stackoverflow.com/questions/35134713/disable-cache-for-specific-run-commands
+
+COPY relations.txt /
 
 RUN git clone https://github.com/seretan/tpen2tei
 
