@@ -1,0 +1,6 @@
+token-normal-form:This is a reading with the same normal form.
+spelling:This is the same reading, spelled differently.
+meaning:These readings are related, but convey different meanings.
+proper-noun:This is the same proper noun, but in a different form.
+transposition:This is the same reading, but with a different word order.
+repetition:This is a reading that was repeated in one or more witnesses.
