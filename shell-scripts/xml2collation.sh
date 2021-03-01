@@ -402,3 +402,7 @@ then
 else
   printf "\nDone. Check out the results in folder $OUTPUT.\n"
 fi
+
+# silently move logs to output
+mkdir -p $OUTPUT/logs
+mv *.response *.log $OUTPUT/logs 2>/dev/null
