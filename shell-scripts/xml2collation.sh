@@ -116,6 +116,11 @@ ls $OUTPUT/1-wf/
 printf "\n`find $OUTPUT/1-nwf/ -name "*.xml" | wc -l` ill-formed file(s) found\n"
 ls $OUTPUT/1-nwf/
 
+if [ ! `find $OUTPUT/1-nwf/ -name "*.xml" | wc -l | xargs` == 0 ] ; then
+    printf "\n\nError: Ill-formed files found. Stopping.\n";
+    exit 0;
+fi
+
 # xml:id check (must be present and non-empty)
 printf "\n\nChecking problematic sigla..."
 siglas_ok=true;
