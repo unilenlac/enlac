@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE TEI PUBLIC "TEI" "https://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_all.dtd">
+<TEI>
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Acta Barnabae</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>IRSB - Projet FNS « Éditer la littérature apocryphe chrétienne » </publisher>
+				<pubPlace>Lausanne</pubPlace>
+				<date>2017…</date>
+			</publicationStmt>
+		<sourceDesc>
+			<msDesc xml:id="Q">
+				<msIdentifier>
+					<country>France</country>
+					<settlement>Paris</settlement>
+					<repository>Bibliothèque nationale de France</repository>
+					<collection>Grec</collection>
+					<idno>1219</idno>
+				</msIdentifier>
+			</msDesc>
+		</sourceDesc>
+		</fileDesc>
+		<revisionDesc status="approved">
+			<change />
+		</revisionDesc>
+	</teiHeader>
+<text>
+	<body>
+		<div>
+            <p>
+			<!-- partial content for demo purposes -->
+            <milestone n="4" />
+            ὡς δὲ τὸ<lb n="14" />
+            <choice>
+                <unclear reason="reproduction" quantity="1" />
+                <supplied cert="medium">ο</supplied>
+            </choice>ραμα
+            ἴδον· σύντρομος γενόμενος· ἀπελθὼν<lb n="15" />
+            προς τοὺς πόδας βαρνάβα· ἀπήγγειλα αὐτῶ ἃ ἴδον<lb n="16" />
+            καὶ ἥκουσα παρὰ τοῦ ἀνδρὸς ἐκείνου μυστήρια·<lb n="17" />
+            παῦλος ὁ ἀπόστολος οὐκ ἦν ἔγγιστα· ἠνίκα ἀνε<lb n="18" />θέμην
+            τὰ τοιαύτα  μυστήρια· εἶπεν δέ μοι βαρ<lb n="19" />νάβας·
+            μὴδενὶ  ἐξείπης τὴν δύναμιν ἣν ἴδες·<lb n="20" />
+            γνώθη γὰρ ὅτι καμοὶ  τῆ νυκτὶ ταύτη παρέστη ὁ <abbr type="ns">κς</abbr><lb n="21" />
+            λέγων· θάρσει· ὡς γὰρ ἔδωκας τὴν ψυχήν σου<lb n="22" />
+            ὑπὲρ τοῦ ὀνόματός μου <add place="above" hand="manus1">εἰς τὸ</add> ἀποθανεῖν·
+            καὶ ἀπ’ἀλλο<lb n="23" />τριωθῆναι
+            τοῦ ἑθνους σου, οὕτω καὶ τελειωθήσει·<lb n="24" />
+            πλὴν· καὶ τὸν ὅντα ἐγγὺς ὑμῶν ὑπηρέτην, καὶ<pb n="32v" /><lb n="1" />
+            αὐτὸν συλλαβοῦ μεθ’ ἑαὐτοῦ· ἔχει γάρ τινὰ μυστή<lb n="2" />ρια
+            θεικᾶ· νῦν οὖν τέκνον φύλαξον σεαυτῶ τὰ<lb n="3" />
+            ῥῆματα ἃ εἶδες καὶ ἤκουσας· καιρὸς γάρ σε ἀπὸ<lb n="4" />καλύψαι
+            μέλλει ταῦτα δι’ ἐμου·
+            <milestone n="5" />
+            κατηχηθέντες<lb n="5" />
+            οὖν παρ’ αὐτοῦ, ἐμείναμεν ἐν ιεροσολύμοις
+            ἡμέ<lb n="6" />ρας
+            ἱκανᾶς· καὶ ἤλθαμεν ἐν αντιοχεία· ἐκεῖ<lb n="7" />θεν
+            τοίνυν, κατηντήσαμεν ἐν σελευκία· ἐκεῖ<lb n="8" />
+            δὲ προσμείναντες ἡμέρας τρεῖς, ἀπεπλεύ<lb n="9" />σαμεν
+            ἐν κύπρω· καὶ ἥμιν ἐγὼ διακονῶν αὐ<lb n="10" />τοῖς·
+            ἄχρις οὖ περιήλθομεν πᾶσαν τὴν κύπρον·<lb n="11" />
+            ἀναχθέντες δὲ ἀπὸ τῆς κύπρου.  κατήχθημεν<lb n="12" />
+            ἐν πέργη τῆς παμφυλίας· κακεῖσε λοιπὸν<lb n="13" />
+            παρέμεινα ὡς μῆνας δύο· βουλόμενος ἐπὶ τὰ<lb n="14" />
+            δυτικᾶ μέρη πορέυεσθαι· καὶ οὐκ εἴασέν με<lb n="15" />
+            τὸ <abbr type="ns">πνα</abbr> τὸ ἅγιον· ἐπιστρέψας δὲ πάλιν· ἐζήτη<lb n="16" />σα
+            τοὺς ἀποστόλους· καὶ μαθῶν ὅτι ἐν  αντιο<lb n="17" />χεῖα
+            ἧσαν, ἐπορεύθην πρὸς αὐτούς·
+</p>
+</div>
+</body>
+</text>
+</TEI>
