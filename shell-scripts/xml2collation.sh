@@ -385,7 +385,7 @@ then
 fi < $USER_FILE
 
 #create tradition (output folder name)
-TRADITION_NAME="$(date +%F)"
+TRADITION_NAME="$(date +%F--%H:%M)"
 curl --request POST --form "name=$TRADITION_NAME" --form "public=no" --form "userId=$USER" --form "empty=no" $STEMMAREST_URL/tradition > create-tradition.response
 
 TRADITION_ID=`jq ".tradId" create-tradition.response | sed s/\"//g`
