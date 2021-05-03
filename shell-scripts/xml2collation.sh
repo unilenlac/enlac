@@ -244,6 +244,16 @@ do
   # printf "."
 done
 
+# printf "\n\tInserting space between subst and add separated by newline only"
+for file in `ls $OUTPUT/2-pre/`
+do
+  sed -r -i ':a;N;$!ba;s/\n/ÿÿÿ/g' $OUTPUT/2-pre/$file
+  sed -r -i 's/(<\/subst>)(ÿÿÿ[[:space:]]+<add)/\1 \2/g' $OUTPUT/2-pre/$file
+  sed -r -i 's/ÿÿÿ/\n/g' $OUTPUT/2-pre/$file
+  # circumvent match across lines
+  # printf "."
+done
+
 if [ ! -f $ABBR_FILE ]
 then
   printf "\nResetting abbreviation file"
