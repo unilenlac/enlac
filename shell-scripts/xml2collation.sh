@@ -214,6 +214,14 @@ do
   printf "."
 done
 
+printf "\n\tEscaping p tags..."
+for file in `ls $OUTPUT/2-pre/`
+do
+  sed -r -i 's/<[pP]>/@p@/g' $OUTPUT/2-pre/$file # <p> -> @p@
+  sed -r -i 's/<\/[pP]>/@\/p@/g' $OUTPUT/2-pre/$file # </p> -> @/p@
+  printf "."
+done
+
 printf "\n\tInserting space between abbr separated by newline only"
 for file in `ls $OUTPUT/2-pre/`
 do
