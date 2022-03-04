@@ -289,7 +289,10 @@ then
           sed -n 's/.*milestone n="\([^"]*\).*/\1/p'  $OUTPUT/2-pre/$file >> $MILESTONE_FILE
         done
       fi
-      sort -u -o $MILESTONE_FILE $MILESTONE_FILE
+
+      # Remove duplicates without sorting
+      awk '!x[$0]++' $MILESTONE_FILE > testfile.tmp && mv testfile.tmp $MILESTONE_FILE
+
   fi
 
   if [ -s $MILESTONE_FILE ]
@@ -345,7 +348,7 @@ fi
 if [ ! -d "$OUTPUT/4-collations" ]; then mkdir $OUTPUT/4-collations/; else rm $OUTPUT/4-collations/*; fi
 
 SECONDS=0
-for file in `ls $OUTPUT/3-collatex-input/`
+for file in `ls -rt $OUTPUT/3-collatex-input/`
 do
   # -t for token by token: -t -f json >
   java -jar -Dnashorn.args="--no-deprecation-warning" $COLLATEX $OUTPUT/3-collatex-input/$file -t -f json > $OUTPUT/4-collations/collation-$file
@@ -419,7 +422,7 @@ then
   done < $RELATION_FILE
 
   #upload collations (JSON format)
-  for i in `ls $OUTPUT/4-collations/*.json`
+  for i in `ls -rt $OUTPUT/4-collations/*.json`
   do
     SECTION_NAME=$(basename $i)
     curl --request POST --form "name=$SECTION_NAME" --form "file=@$i" --form "filetype=cxjson" $STEMMAREST_URL/tradition/$TRADITION_ID/section;
