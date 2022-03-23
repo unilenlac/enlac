@@ -1,6 +1,9 @@
 token-normal-form:This is a reading with the same normal form.
+realignment:It puts the readings in order in case of an error in the automated collation.
 repetition:This is a reading that was repeated in one or more witnesses.
-transposition:This is the same reading, but with a different word order.
-proper-noun:This is the same proper noun, but in a different form.
-meaning:These readings are related, but convey different meanings.
+transposition:This is the same reading but with a different word order.
+proper-noun:This is the same proper noun but in a different form.
 spelling:This is the same reading, spelled differently.
+synonymic:These readings have a similar meaning but a different radical.
+meaning:These readings are related, but convey different meanings.
+morphological:This reading has the same radical but a different form.
