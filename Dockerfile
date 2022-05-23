@@ -27,9 +27,9 @@ RUN git clone https://github.com/seretan/tpen2tei
 
 RUN cd tpen2tei && git checkout xmlrich_tokenization
 
-RUN useradd -u 8877 unilenlac
+#RUN useradd -u 8877 unilenlac
 
-USER unilenlac
+#USER unilenlac
 
 WORKDIR /home/
 
