@@ -3,10 +3,6 @@ version: '3.2'
 services:
   stemmarest:
     image: unilenlac/stemmarest
-    volumes:
-      - type: bind
-        source: ./graph-database
-        target: /var/lib/stemmarest/data
     ports:
       - 8080:8080
 
