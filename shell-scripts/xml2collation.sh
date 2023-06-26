@@ -32,7 +32,7 @@ fi
 # path to tools/resources
 export TPEN2TEI_PATH=(/tpen2tei)
 export NORM_MOD=($TPEN2TEI_PATH/Milestones.Milestones) #Milestones/Milestones.py
-export COLLATEX=(/collatex/collatex-tools/target/collatex-tools-1.8-SNAPSHOT.jar) # collatex jar
+export COLLATEX=(/collatex/collatex-tools/target/${COLLATEX_VERSION}) # collatex jar
 MILESTONE_FILE="milestones.csv"
 MILESTONE_JSON="milestones.json"
 ABBR_FILE="abbr.csv"
@@ -40,19 +40,10 @@ INDEX_FILE="index.txt"
 STEMMAREST_FILE="stemmaresturl.txt"
 USER_FILE="user.txt"
 RELATION_FILE="relations.txt"
-DEFAULT_USER="user@example.org"
-DEFAULT_PASS="d0d4f76c2ba30e1eb0bdfe544df5ec8e6951872106eb1bd3d7f9208993f28c69"
-DEFAULT_URL="http://stemmarest:8080/stemmarest"
+DEFAULT_USER="${USER_ACCOUNT}@example.org"
+DEFAULT_URL="http://127.0.0.1:8080/stemmarest"
 
-export STEMMAREST_URL=""
-if [ -f $STEMMAREST_FILE ] # file exists
-then
-    read STEMMAREST_URL < $STEMMAREST_FILE
-    printf "\n$STEMMAREST_FILE file found; URL read: $STEMMAREST_URL\n"
-else
-    STEMMAREST_URL=$DEFAULT_URL
-    printf "$STEMMAREST_URL\n" > $STEMMAREST_FILE
-fi
+export STEMMAREST_URL="${STEMMAREST_URL}"
 
 if [ ! -f $INDEX_FILE ] # index file does not exist
 then
@@ -398,16 +389,16 @@ then
 fi
 
 #create user(s)
-printf "Reading user data from $USER_FILE...\n"
-if IFS=":" read USER PASSPHRASE
-then
-  printf "Creating user <$USER>...\n"
-  curl --request PUT --header "Content-Type: application/json" --data '{ "role": "user", "id":"'$USER'", "email":"'$USER'", "passphrase":"'$PASSPHRASE'" }' $STEMMAREST_URL/user/$USER > create-user.response
-fi < $USER_FILE
+# printf "Reading user data from $USER_FILE...\n"
+# if IFS=":" read USER PASSPHRASE
+# then
+#   printf "Creating user <$USER>...\n"
+#   curl --request PUT --header "Content-Type: application/json" --data '{ "role": "user", "id":"'$USER'", "email":"'$USER'", "passphrase":"'$PASSPHRASE'" }' $STEMMAREST_URL/user/$USER > create-user.response
+# fi < $USER_FILE
 
 #create tradition (output folder name)
 TRADITION_NAME="$(date +%F--%H:%M)"
-curl --request POST --form "name=$TRADITION_NAME" --form "public=no" --form "userId=$USER" --form "empty=no" $STEMMAREST_URL/tradition > create-tradition.response
+curl --request POST --form "name=$TRADITION_NAME" --form "public=no" --form "userId=$USER_ACCOUNT" --form "empty=no" $STEMMAREST_URL/tradition > create-tradition.response
 
 TRADITION_ID=`jq ".tradId" create-tradition.response | sed s/\"//g`
 
@@ -428,7 +419,7 @@ then
     curl --request POST --form "name=$SECTION_NAME" --form "file=@$i" --form "filetype=cxjson" $STEMMAREST_URL/tradition/$TRADITION_ID/section;
   done
 
-  printf "\nDone. Check out the results at localhost:3000 (or your own Stemmaweb instance) by connecting with $USER/UserPass.\n"
+  printf "\nDone. Check out the results at localhost:3000 (or your own Stemmaweb instance) by connecting with $USER_ACCOUNT/${DEFAULT_USER_PASS}.\n"
 else
   printf "\nDone. Check out the results in folder $OUTPUT.\n"
 fi
