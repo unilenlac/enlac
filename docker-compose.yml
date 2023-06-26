@@ -1,17 +1,17 @@
 version: '3.2'
 
 services:
-  # stemmarest:
-  #   image: unilenlac/stemmarest
-  #   ports:
-  #     - 8080:8080
+  stemmarest:
+    image: unilenlac/stemmarest
+    ports:
+      - 8080:8080
 
-  # stemmaweb:
-  #   image: unilenlac/stemmaweb
-  #   ports:
-  #     - 3000:3000
-  #   depends_on:
-  #     - stemmarest
+  stemmaweb:
+    image: unilenlac/stemmaweb
+    ports:
+      - 3000:3000
+    depends_on:
+      - stemmarest
 
   enlacpipeline:
     image: unilenlac/pipeline
